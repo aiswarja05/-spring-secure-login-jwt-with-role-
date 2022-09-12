@@ -42,11 +42,13 @@
   to user h2 database
 </p>
 <pre>
-  &lt;<span class="pl-ent">dependency</span>&gt;
-    &lt;<span class="pl-ent">groupId</span>&gt;com.h2database&lt;/<span class="pl-ent">groupId</span>&gt;
-    &lt;<span class="pl-ent">artifactId</span>&gt;h2&lt;/<span class="pl-ent">artifactId</span>&gt;
-    &lt;<span class="pl-ent">scope</span>&gt;runtime&lt;/<span class="pl-ent">scope</span>&gt;
-  &lt;/<span class="pl-ent">dependency</span>&gt;
+  <code>
+    <span class="pl-ent">dependency</span>
+      <span class="pl-ent">groupId</span>&gt;com.h2database&lt;/<span class="pl-ent">groupId</span>
+      <span class="pl-ent">artifactId</span>&gt;h2&lt;/<span class="pl-ent">artifactId</span>
+      <span class="pl-ent">scope</span>&gt;runtime&lt;/<span class="pl-ent">scope</span>
+    <span class="pl-ent">dependency</span>
+  </code>
 </pre>
 
 <p>
@@ -54,11 +56,13 @@
 </p>
 
 <pre>
-  &lt;<span class="pl-ent">dependency</span>&gt;
-    &lt;<span class="pl-ent">groupId</span>&gt;io.jsonwebtoken&lt;/<span class="pl-ent">groupId</span>&gt;
-    &lt;<span class="pl-ent">artifactId</span>&gt;jjwt&lt;/<span class="pl-ent">artifactId</span>&gt;
-    &lt;<span class="pl-ent">version</span>&gt;0.9.1&lt;/<span class="pl-ent">version</span>&gt;
-  &lt;/<span class="pl-ent">dependency</span>&gt;
+  <code>
+    <span class="pl-ent">dependency</span>
+      <span class="pl-ent">groupId</span>&gt;io.jsonwebtoken&lt;/<span class="pl-ent">groupId</span>
+      <span class="pl-ent">artifactId</span>&gt;jjwt&lt;/<span class="pl-ent">artifactId</span>
+      <span class="pl-ent">version</span>&gt;0.9.1&lt;/<span class="pl-ent">version</span>
+    <span class="pl-ent">dependency</span>
+  </code>
 </pre>
 
 <p>
@@ -66,11 +70,13 @@
 </p>
 
 <pre>
-  &lt;<span class="pl-ent">dependency</span>&gt;
-    &lt;<span class="pl-ent">groupId</span>&gt;org.springframework.security.oauth&lt;/<span class="pl-ent">groupId</span>&gt;
-    &lt;<span class="pl-ent">artifactId</span>&gt;spring-security-oauth2&lt;/<span class="pl-ent">artifactId</span>&gt;
-    &lt;<span class="pl-ent">version</span>&gt;2.0.2.RELEASE&lt;/<span class="pl-ent">version</span>&gt;
-  &lt;/<span class="pl-ent">dependency</span>&gt;
+  <code>
+    <span class="pl-ent">dependency</span>
+      <span class="pl-ent">groupId</span>&gt;org.springframework.security.oauth&lt;/<span class="pl-ent">groupId</span>
+      <span class="pl-ent">artifactId</span>&gt;spring-security-oauth2&lt;/<span class="pl-ent">artifactId</span>
+      <span class="pl-ent">version</span>&gt;2.0.2.RELEASE&lt;/<span class="pl-ent">version</span>
+    <span class="pl-ent">dependency</span>
+  </code>
 </pre>
 
 <p>
@@ -78,28 +84,28 @@
   Open <code>src/main/resources/application.properties</code>
 </p>
 
-<p>
+<pre>
   <code>
     spring.h2.console.enabled=true
+    # default path: h2-console
     spring.h2.console.path=/h2-ui
-    
-    spring.datasource.url=jdbc:h2:file:./testdb</br>
-    spring.datasource.driverClassName=org.h2.Driver</br>
-    spring.datasource.username=sa</br>
-    spring.datasource.password=</br>
 
-    spring.jpa.show-sql=true</br>
-    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect</br>
-    spring.jpa.hibernate.ddl-auto= update</br>
+    spring.datasource.url=jdbc:h2:file:./testdb
+    spring.datasource.driverClassName=org.h2.Driver
+    spring.datasource.username=sa
+    spring.datasource.password=
 
-    # App Properties</br>
-    bezkoder.app.jwtCookieName= bezkoder</br>
-    bezkoder.app.jwtSecret= bezKoderSecretKey</br>
-    bezkoder.app.jwtExpirationMs= 86400000</br>
+    spring.jpa.show-sql=true
+    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
+    spring.jpa.hibernate.ddl-auto= update
+
+    # App Properties
+    joyee.app.jwtSecret= no7nd1ixe0
+    joyee.app.jwtExpirationMs= 5400000
 
     server.port=9310
   </code>
-</p>
+</pre>
 
 
 
