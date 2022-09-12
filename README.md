@@ -78,6 +78,29 @@
   Open <code>src/main/resources/application.properties</code>
 </p>
 
+<p>
+  <code>
+    spring.h2.console.enabled=true
+    spring.h2.console.path=/h2-ui
+    
+    spring.datasource.url=jdbc:h2:file:./testdb</br>
+    spring.datasource.driverClassName=org.h2.Driver</br>
+    spring.datasource.username=sa</br>
+    spring.datasource.password=</br>
+
+    spring.jpa.show-sql=true</br>
+    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect</br>
+    spring.jpa.hibernate.ddl-auto= update</br>
+
+    # App Properties</br>
+    bezkoder.app.jwtCookieName= bezkoder</br>
+    bezkoder.app.jwtSecret= bezKoderSecretKey</br>
+    bezkoder.app.jwtExpirationMs= 86400000</br>
+
+    server.port=9310
+  </code>
+</p>
+
 
 
 
