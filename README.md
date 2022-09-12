@@ -107,6 +107,23 @@
   </code>
 </pre>
 
+<p>
+  <h3>To run this application execute the maven command</h3>
+</p>
+<pre>
+  <code>
+    mvn spring-boot:run
+  </code>
+</pre>
+
+<pre>
+  <b>check the database UI from<b> <a href="http://localhost:9310/h2-ui" target="_blank">here</a>
+</pre>
+
+<pre>
+  <b>find the collection of this service from <b> <a href="https://www.getpostman.com/collections/b7461381020230715da2" target="_blank">here</a>
+</pre>
+
 
 
 
